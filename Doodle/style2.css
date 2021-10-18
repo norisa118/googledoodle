@@ -1,0 +1,196 @@
+
+
+body {
+font-family: 'Roboto',arial,sans-serif;
+font-weight: 300;
+line-height: 1.2em;
+margin: 0 auto;
+overflow-x: hidden;
+}
+
+.head {
+    font-family: 'Roboto',arial,sans-serif;
+    padding-left: 250px;
+    position: fixed;
+    z-index: 3;
+}
+
+header {
+    padding-top: 1px;
+    width: 100vw;
+    background: rgb(251, 251, 251);
+    display: flex;
+    align-items: center;
+    transition: padding 0.25s ease;
+}
+
+
+li, a {
+    padding-top:13px;
+    font-family: 'Roboto',arial,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    display: list-item;
+}
+
+
+.logo {
+height: 50px;
+cursor: pointer;
+}
+
+.nav_links {
+list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+    .nav_links li a {
+        color: #009cdc;
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li:hover a {
+        color: #2772ff;
+    }
+
+html {
+scroll-behavior: smooth;
+}
+
+h1{
+    font-weight:bold;
+}
+
+a {
+list-style-position: inside;
+line-height: 1.3em;
+color: #009cdc;
+text-decoration: none;
+}
+
+a:hover {
+color: #000;
+}
+
+.minimize {
+padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-left: 450px;
+}
+
+.center {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+cursor: auto;
+font-style: normal;
+word-wrap: break-word;
+box-sizing: border-box;
+color: #202124;
+margin-left: auto;
+margin-right: auto;
+font-weight: 500;
+text-align: center;
+font-size: 32px;
+line-height: 44px;
+max-width: 500px;
+margin-bottom: .5em;
+margin-top: 0;
+}
+
+.page-description {
+font-weight: 300;
+color: #202124;
+transition: .3s font-size, .3s max-width;
+width: 50%;
+font-size: 19px;
+max-width: 595px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.7em;
+}
+
+.see-more {
+font-weight: 300;
+text-align: center;
+color: #202124;
+transition: .3s font-size, .3s max-width;
+width: 50%;
+font-size: 19px;
+max-width: 595px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.7em;
+padding-top:10px;
+padding-bottom:30px;
+}
+
+
+
+.btn{
+margin-left:47.5%;
+margin-bottom:30px;
+margin-top:100px;
+}
+
+
+.row {
+    justify-content: center;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+.w-100{
+    padding-top:0px;
+}
+
+
+/* [1] The container */
+.col-6{
+    height: 210px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+    /* [2] Transition property for smooth transformation of images */
+    .col-6 img {
+        max-width: 300px;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+        padding-top: 30px;
+    }
+
+    /* [3] Finally, transforming the image when container gets hovered */
+.col-6:hover img {
+    transform: scale(1.1);
+}
+
+
+.bg {
+    background: url(images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+
+a {
+    list-style: none;
+}
+
+.dlbtn{
+    margin-left:600px;
+}

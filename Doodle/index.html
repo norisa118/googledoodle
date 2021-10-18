@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
+
+
+    <script>
+        function scrollFnc() {
+            document.getElementById("window").style.cssText = "padding - bottom: 14px;padding - top: 24px;padding-left: 250px;position: fixed;background: #fbfbfb;border-bottom: 1px solid #f1f1f1;left: 0;right: 0;z-index: 3;box-shadow: 0 0 8px rgb(0 0 0 / 10%);border-color: #bbb; color:purple;";
+
+            // check where it scrolled to
+            if ($(window).scrollTop() == 0) {
+                document.getElementById("window").style.cssText = "border-color: #f1f1f1;-webkit - transition: padding 0.25s ease;border-bottom: 1px solid #f1f1f1;top: 0;padding-top:14px;padding-bottom:0;";
+            }
+        }
+    </script>
+
+</head>
+
+
+<body onscroll="scrollFnc()">
+
+    <header id="window" class="head">
+        <img class="logo" src="images/newlogo.png" alt="logo" />
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <a class="diffA" href="images/neha_resume.pdf" download="Neha_Satish_Resume">
+            <img class="dlbtn" src="images/cv.png" alt="Neha_Resume" width="75">
+        </a>
+
+    </header>
+
+    
+   
+
+
+    <div id="top-content">
+        <div id="latest">
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="slider-item slider-item--visible">
+                        <img class="slidImg" src="images\megif.gif" />
+                    </div>
+                    <div class="slider-item">
+                        <img class="slidImg" src="images\281.png" />
+                    </div>
+                    <div class="slider-item">
+                        <img class="slidImg" src="images\370.png" />
+                    </div>
+                    <div class="slider-item">
+                        <img class="slidImg" src="images\203.png" />
+                    </div>
+
+                </div>
+                <nav class="navbar">
+                    <span class="navbar-item navbar-item--selected" data-position="1"></span>
+                    <span class="navbar-item" data-position="2"></span>
+                    <span class="navbar-item" data-position="3"></span>
+                    <span class="navbar-item" data-position="4"></span>
+                </nav>
+            </div>
+
+            <script>
+                const $navbars = document.querySelectorAll(`.navbar-item`);
+
+
+                function removeSelected() {
+                    const $selected = document.querySelectorAll(`.navbar-item--selected, .slider-item--visible`);
+
+                    if (!$selected) {
+                        return;
+                    }
+
+                    for (let each of $selected) {
+                        each.classList.remove("navbar-item--selected");
+                        each.classList.remove("slider-item--visible");
+                    }
+
+                }
+
+                for (let each of $navbars) {
+                    each.addEventListener("mouseover", function () {
+
+                        removeSelected();
+
+                        const position = each.getAttribute("data-position");
+                        const $item = document.querySelector(`.slider .slider-item:nth-child(${position})`)
+
+                        each.classList.add("navbar-item--selected")
+                        $item.classList.add("slider-item--visible");
+                    });
+                }
+            </script>
+
+
+
+            <div class="card">
+                <div class="ribbon-2 ribbon">
+                    <p class="ribbon_txt">Oct 18, 2021</p>
+                </div>
+
+                <div class="triangle">
+                </div>
+                <div class="triangle2">
+                </div>
+
+                <div class="triangle3">
+                </div>
+                <div class="triangle4">
+                </div>
+
+                <div class="title">
+                    <p id="top_title"> Neha Satish, UMich CSE <br /> (October 18) </p>
+
+                </div>
+
+                <div class="links">
+                    <ul id="linkID">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/2VZQRXC6MU9X>Certifications">Certifications</a></a></li>
+                    </ul>
+                </div>
+                <div class="fontIcons">
+                    <a target="_blank" href="https://www.linkedin.com/in/nehasatish/">
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/norisa118">
+                        <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="mailto:nehasa1819@gmail.com">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <script src="https://use.fontawesome.com/7c396dc5cb.js"></script>
+                </div>
+
+
+        </div>
+    </div>
+
+    <div class="tripCards">
+        <div class="tripleC">
+            <div class="ribbon-1 ribbon">
+                <p class="ribbon_txt2">
+                    May - Jul, 2021
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/ford.png">
+            </div>
+
+            <div class="titleC">
+                Ford Motor Co. (Atlanta, GA)
+            </div>
+
+            <div class="des">
+                <p class="ptag">● Designed and developed a web app that provides direct, visualized data to product dev teams using Youtube and Twitter APIs</p>
+                <p class="ptag">
+                    ● Quantified customer experience using BERT based sentiment analysis from social media comments and performed n-gram
+                    analysis to live-track top relevant keywords for any product
+                </p>
+                <p class="ptag">
+                    ● Remodeled data-driven development by introducing management to data ingestion components from the reservoir, and used
+                    Hive queries to generate aggregated data and display them on business intelligence tools
+                </p>
+                
+            </div>
+
+        </div>
+
+        <div class="tripleC">
+            <div class="ribbon-1 ribbon">
+                <p class="ribbon_txt2">Jun - Aug, 2020</p>
+            </div>
+            <div class="image">
+                <img src="images/baby.gif">
+            </div>
+
+            <div class="titleC">
+                Warmilu LLC. (Detroit, MI)
+            </div>
+
+            <div class="des">
+                <p class="ptag">
+                    ● Co-authored unreleased evidence based journal on effect of non-electric infant incubator blankets on preventing neonatal
+                    hypothermia in newborn nurseries or NICU’s
+                </p>
+                <p class="ptag">● Acquired tangible increases in product sales and partnerships— secured over 65 partner countries in 2 months</p>
+                <p class="ptag">
+                    ● Generated increases in customer/partner engagement and retention, leading to direct contact with USAID, Jhpiego,
+                    Dorothy Nyong’o and others
+                </p>
+               
+
+            </div>
+
+        </div>
+
+        <div class="tripleC">
+            <div class="ribbon-1 ribbon">
+                <p class="ribbon_txt2">Aug 2021 - Pres</p>
+            </div>
+            <div class="image">
+                <img src="images/f1car.png">
+            </div>
+
+            <div class="titleC">
+                MRACING Formula SAE (Ann Arbor, MI)
+            </div>
+
+            <div class="des">
+                <p class="ptag">● Developing design strategy for monocoque stand</p>
+                <p class="ptag">● Developing a CNC manufacturing plan for Chassis-Aero integration</p>
+                <p class="ptag">● Manufactured carbon fiber layup of nosecones</p>
+            </div>
+
+        </div>
+    </div>
+
+    <hr id="secondH">
+
+
+
+    <div class="sixCards">
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/first.png">
+                </div>
+
+                <div class="titleS">
+                    Mother leaves for America (Bangalore, India)
+                    <div class="date">Aug, 1999</div>
+                </div>
+
+            </div>
+            <div class="box overlay">
+            </div>
+            <p class="ontop">"So a piece of you will always be with me! Bye Mom."</p>
+
+        </div>
+
+
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/second.png">
+                </div>
+
+                <div class="titleS">
+                    Starting of her new adventure (Newark, NJ)
+                    <div class="date">Sept, 1999</div>
+                </div>
+
+            </div>
+            <div class="box overlay">
+            </div>
+            <p class="ontop">"I hope they have chapathi and chole here..."</p>
+
+        </div>
+
+
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/third.png">
+                </div>
+
+                <div class="titleS">
+                    Costs of education interrupts dreams (Boca Raton, FL)
+                    <div class="date">Jun, 2000</div>
+                </div>
+
+            </div>
+            <div class="box overlay">
+            </div>
+            <p class="ontop">"Maybe I can save up and try again soon."</p>
+
+        </div>
+
+
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/fourth.png">
+                </div>
+
+                <div class="titleS">
+                    A more welcomed interruption (Roswell, GA)
+                    <div class="date">Sept, 2001</div>
+                </div>
+
+            </div>
+            <div class="box overlay">
+            </div>
+            <p class="ontop">"Someday you will look at this house and wonder how something that feels so big can look so small. (Alison McGhee)"</p>
+        </div>
+
+
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/fifth.png">
+                </div>
+
+                <div class="titleS">
+                    Dreaming up my own adventures (Alpharetta, GA)
+                    <div class="date">2001-2019</div>
+                </div>
+
+            </div>
+            <div class="box overlay">
+            </div>
+            <p class="ontop">"I want to be a writer and an astronaut and a firefighter and a..."</p>
+
+        </div>
+
+
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/sixth.png">
+                </div>
+
+                <div class="titleS">
+                    I leave for college (Johns Creek, GA)
+                    <div class="date">Aug, 2019</div>
+                </div>
+
+            </div>
+            <div class="box overlay">
+            </div>
+            <p class="ontop">"Bye Mom! I'll keep a piece of you with me forever"</p>
+
+        </div>
+
+
+        <div ><img id="imgSeven" src="images/seventh.png"></div>
+    
+
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+

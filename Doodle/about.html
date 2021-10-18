@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
+
+
+    <script>
+        function scrollFnc() {
+            document.getElementById("window").style.cssText = "padding-bottom: 14px;padding - top: 24px;padding-left: 250px;position: fixed;background: #fbfbfb;border-bottom: 1px solid #f1f1f1;left: 0;right: 0;z-index: 3;box-shadow: 0 0 8px rgb(0 0 0 / 10%);border-color: #bbb; color:purple;";
+
+            // check where it scrolled to
+            if ($(window).scrollTop() == 0) {
+                document.getElementById("window").style.cssText = "border-color: #f1f1f1;-webkit - transition: padding 0.25s ease;border-bottom: 1px solid #f1f1f1;top: 0;padding-top:14px;padding-bottom:0;";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="window" class="head">
+        <img class="logo" src="images/newlogo.png" alt="logo" />
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <a class="diffA" href="images/neha_resume.pdf" download="Neha_Satish_Resume">
+            <img class="dlbtn" src="images/cv.png" alt="Neha_Resume" width="75">
+        </a>
+
+    </header>
+
+    <h1 class="title">
+        Who Am I?
+    </h1>
+    <img src="images/whoami.png" class="center">
+
+    <h1 class="winners-header">
+        Neha Satish
+    </h1>
+
+    <p class="judge-text judge-text--p">
+        UMich College of Engineering Computer Science Student, B.S.E. 2022
+    </p>
+
+    <p id="bio">
+
+        Hi! I’m Neha Satish, a senior majoring in Computer Science at the University of Michigan’s College of Engineering. I’ve previously worked in the automotive and biomedical devices industries, where I honed my product data analysis, statistical research, and entrepreneurship skills. <br />
+        <br />
+        At Ford, I developed an internal web application that reduced the data ingestion timeline for product feedback by a week. I’m also part of the Ford Fund program, where I lead a campaign against common issues faced by young children around the world. 
+
+        At Warmilu, a non-electric warming technology company, I was tasked with data analysis for their medical trials as well as outreach. Through this, I and one other intern were able to increase our company’s partners from 15 countries to over 70 in two months. As a result, many more infant deaths from hypothermia and hypothermia-related causes were prevented.<br />
+        <br />
+       I have been accepted to do Computer Science Engineering research at the University of Michigan on the applications of fluid computing. I’m also in MRACING, the #1 Formula SAE team in the U.S., where we build Formula cars and race them in international competitions.<br />
+        <br />
+       BOLD is about elevating those who are underrepresented which is a value that I resonate with. If I were to get this opportunity, it would aid in using engineering to improve the lives of the neediest through low-cost, effective, and scalable solutions.
+
+    </p>
+
+
+</body>
+</html>

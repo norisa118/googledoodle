@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
+
+
+    <script>
+        function scrollFnc() {
+            document.getElementById("window").style.cssText = "padding-bottom: 14px;padding - top: 24px;padding-left: 250px;position: fixed;background: #fbfbfb;border-bottom: 1px solid #f1f1f1;left: 0;right: 0;z-index: 3;box-shadow: 0 0 8px rgb(0 0 0 / 10%);border-color: #bbb; color:purple;";
+
+            // check where it scrolled to
+            if ($(window).scrollTop() == 0) {
+                document.getElementById("window").style.cssText = "border-color: #f1f1f1;-webkit - transition: padding 0.25s ease;border-bottom: 1px solid #f1f1f1;top: 0;padding-top:14px;padding-bottom:0;";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="window" class="head">
+        <img class="logo" src="images/newlogo.png" alt="logo" />
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+
+        <a href="images/neha_resume.pdf" download="Neha_Satish_Resume">
+            <img class="dlbtn" src="images/cv.png" alt="Neha_Resume" width="75">
+        </a>
+
+    </header>
+
+    <div class="wrapper bg">
+        <img src="images/this.png" class="center">
+
+
+        <h1 class="winners-header">
+            Google Doodle Resume Showcase
+        </h1>
+
+        <p class="page-description">
+            My most recent project was this website! Check out my work with flask development, app integration, data analysis and visualization, data structures and algorithms, web scraping, facial recognition, and much more at my Github below:
+        </p>
+
+        <br />
+        <p class="see-more"> See More Projects Below: </p>
+
+        <div class="row">
+            <div class="col-6 col-sm-3">
+                <a href="https://github.com/norisa118/Flask-Calendar-Web-App">
+                    <img src="images/sq1.png" class="fourBox">
+                    </a>
+            </div>
+            <div class="col-6 col-sm-3">
+                <a href="https://github.com/norisa118/CLASP">
+                    <img src="images/sq2.png" class="fourBox">
+                    </a>
+            </div>
+
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-3">
+                <a href="https://github.com/norisa118">
+                    <img src="images/sq3.png" class="fourBox">
+                    </a>
+            </div>
+            <div class="col-6 col-sm-3">
+                <a href="https://github.com/norisa118/CLASP/tree/master/clasp2">
+                    <img src="images/sq4.png" class="fourBox">
+                    </a>
+            </div>
+        </div>
+
+
+        <a class="btn btn-primary btn-lg" href="https://github.com/norisa118" role="button">See More!</a>
+    </div>
+
+</body>
+</html>
