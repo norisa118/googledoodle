@@ -124,45 +124,34 @@ margin-right: auto;
 line-height: 1.7em;
 }
 
-.see-more {
-font-weight: 300;
-text-align: center;
-color: #202124;
-transition: .3s font-size, .3s max-width;
-width: 50%;
-font-size: 19px;
-max-width: 595px;
-margin-left: auto;
-margin-right: auto;
-line-height: 1.7em;
-padding-top:10px;
-padding-bottom:30px;
-}
 
-
-
-.btn{
-margin-left:47.5%;
-margin-bottom:30px;
-margin-top:100px;
+.btn {
+    max-width: 595px;
+    margin-left: 42.5%;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    min-width:200px;
 }
 
 
 .row {
+    margin-left: 60px;
+    margin-right: auto;
     justify-content: center;
+    align-content: center;
     cursor: pointer;
-    margin: 15px auto;
+    padding: 0;
 }
 
-.w-100{
-    padding-top:0px;
-}
 
 
 /* [1] The container */
-.col-6{
+.col-6 {
+    width: 100%;
+    height: auto;
     height: 210px; /* [1.1] Set it as per your need */
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    padding-right: 0;
 }
 
     /* [2] Transition property for smooth transformation of images */
@@ -170,13 +159,14 @@ margin-top:100px;
         max-width: 300px;
         overflow: hidden;
         transition: transform 0.5s ease;
-        padding-top: 30px;
+        padding:0;
     }
 
     /* [3] Finally, transforming the image when container gets hovered */
 .col-6:hover img {
     transform: scale(1.1);
 }
+
 
 
 .bg {
@@ -191,6 +181,13 @@ a {
     list-style: none;
 }
 
-.dlbtn{
-    margin-left:600px;
+.dlbtn {
+    position: absolute;
+    right: 150px;
+    top: 5px;
+}
+
+.fourbox{
+    margin-right:0;
+    padding-right:0;
 }

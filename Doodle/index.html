@@ -23,7 +23,7 @@
 
             // check where it scrolled to
             if ($(window).scrollTop() == 0) {
-                document.getElementById("window").style.cssText = "border-color: #f1f1f1;-webkit - transition: padding 0.25s ease;border-bottom: 1px solid #f1f1f1;top: 0;padding-top:14px;padding-bottom:0;";
+                document.getElementById("window").style.cssText = "padding-top:14px;border-color: #f1f1f1;-webkit - transition: padding 0.25s ease;top: 0; padding-left: 250px;position: fixed;background: #fbfbfb;left: 0;right: 0;z-index: 3;border-color: #bbb;";
             }
         }
     </script>
@@ -33,7 +33,7 @@
 
 <body onscroll="scrollFnc()">
 
-    <header id="window" class="head">
+    <header id="window" class="head" style="padding-left: 250px; position: fixed; background: rgb(251, 251, 251);left: 0px; right: 0px; z-index: 3;">
         <img class="logo" src="images/newlogo.png" alt="logo" />
         <nav>
             <ul class="nav_links">
@@ -173,14 +173,14 @@
             </div>
 
             <div class="des">
-                <p class="ptag">● Designed and developed a web app that provides direct, visualized data to product dev teams using Youtube and Twitter APIs</p>
+                <p class="ptag">● Developed web app that provides visualized data to dev teams using Youtube & Twitter APIs</p>
                 <p class="ptag">
-                    ● Quantified customer experience using BERT based sentiment analysis from social media comments and performed n-gram
-                    analysis to live-track top relevant keywords for any product
+                    ● Quantified customer experience using BERT sentiment analysis from SNS comments and performed n-gram
+                    analysis to live-track product keywords
                 </p>
                 <p class="ptag">
-                    ● Remodeled data-driven development by introducing management to data ingestion components from the reservoir, and used
-                    Hive queries to generate aggregated data and display them on business intelligence tools
+                    ● Remodeled data-driven development by introducing management to new data ingestion components, used
+                    Hive queries to generate aggregate data and display in business intelligence tools
                 </p>
                 
             </div>
@@ -223,7 +223,7 @@
                 <img src="images/f1car.png">
             </div>
 
-            <div class="titleC">
+            <div class="titleC1">
                 MRACING Formula SAE (Ann Arbor, MI)
             </div>
 
